@@ -1,6 +1,6 @@
 Role Name
 =========
-
+Create 5 Ami t2.micro instances
 A brief description of the role goes here.
 
 Requirements
