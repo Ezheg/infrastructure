@@ -1,0 +1,6 @@
+---
+- name: run roles
+- roles:
+    - instances
+    - users_and_groups
+    - wordpress_ubuntu
