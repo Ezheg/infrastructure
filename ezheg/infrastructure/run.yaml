@@ -1,6 +1,7 @@
 ---
 - name: run roles
+- hosts: localhost
 - roles:
     - instances
     - users_and_groups
-    - wordpress_ubuntu
+    #- wordpress_ubuntu
