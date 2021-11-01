@@ -1,7 +1,7 @@
 ---
-- name: run roles
-- hosts: localhost
-- roles:
-    - instances
+- name: run
+  hosts: localhost
+  become: True
+  gather_facts: True
+  roles:
     - users_and_groups
-    #- wordpress_ubuntu

@@ -1,12 +1,11 @@
 ---
 # tasks file for users_and_groups
-- name: Create a group with users 
-  community.aws.iam_group:
-    name: DevOps
-    
-    users:
-      - test_DevOps1
-      - test_DevOps2
+# - name: Ensure group "somegroup" exists
+- ansible.builtin.group:
+    name: "dev"
     state: present
-    msg:
-        - 'Now we create group - Devops and add to it 2 Users'
+   with_items:
+    - somegroup
+    - billing
+    - marketing
+    - sales
